@@ -122,25 +122,25 @@
 				<input name="memberPic" class="easyui-validatebox" >
 			</div>
 
-			<div class="fitem">
-				<label>用户注册时间:</label>
-				<input name="regDate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>用户注册时间:</label>-->
+				<!--<input name="regDate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
-			<div class="fitem">
-				<label>最近更新时间:</label>
-				<input name="updateDate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>最近更新时间:</label>-->
+				<!--<input name="updateDate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
-			<div class="fitem">
-				<label>登录系统时间:</label>
-				<input name="lastLogindate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>登录系统时间:</label>-->
+				<!--<input name="lastLogindate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
-			<div class="fitem">
-				<label>退出系统时间:</label>
-				<input name="lastOutdate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>退出系统时间:</label>-->
+				<!--<input name="lastOutdate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
 			<!--<div class="fitem">-->
 				<!--<label>作者:</label>-->
@@ -173,25 +173,25 @@
 		queryParams:  form2Json('searchform'),
 		 
 	    columns:[[
-            {field:'memberId',title:'会员编号', width:100},
+            {field:'memberId',title:'会员编号',hidden:true},
             {field:'memberName',title:'会员姓名',width:100},
-            {field:'memberPhone',title:'会员电话',width:100},
-            {field:'memberSexual',title:'会员性别',width:100},
-            {field:'memberAddr',title:'会员地址',width:100},
-            {field:'memberIdentity',title:'会员身份证',width:100},
+            {field:'memberPhone',title:'会员电话',width:120},
+            {field:'memberSexual',title:'性别',width:50},
+            {field:'memberAddr',title:'住址',width:100},
+            {field:'memberIdentity',title:'会员身份证',width:150},
             {field:'memberCarnumber',title:'车牌号',width:100},
-            {field:'memberLoginname',title:'登录账号',width:100},
-            {field:'memberPassword',title:'登录密码',width:100},
+            {field:'memberLoginname',title:'登录账号',hidden:true},
+            {field:'memberPassword',title:'登录密码',hidden:true},
             {field:'memberType',title:'会员类别',width:100},
             {field:'memberCardid',title:'会员卡卡号',width:100},
             {field:'memberNickname',title:'会员昵称',width:100},
             {field:'memberPoints',title:'会员积分',width:100},
-            {field:'receiveAddrid',title:'会员收货地址',width:100},
-            {field:'memberPic',title:'会员头像',width:100},
-            {field:'regDate',title:'注册时间',width:100},
-            {field:'updateDate',title:'更新时间',width:100},
-            {field:'lastLogindate',title:'登录系统时间',width:100},
-            {field:'lastOutdate',title:'退出系统时间',width:100}
+            {field:'receiveAddrid',title:'会员收货地址',hidden:true},
+            {field:'memberPic',title:'会员头像',hidden:true},
+            {field:'regDate',title:'注册时间',width:150},
+            {field:'updateDate',title:'更新时间',hidden:true},
+            {field:'lastLogindate',title:'登录系统时间',hidden:true},
+            {field:'lastOutdate',title:'退出系统时间',hidden:true}
 
 	    ]]
 	});
@@ -264,7 +264,7 @@
 						/* $.post('url路径',数据,回调方法,格式);
 							row.xwsj 
 						 */
-						$.post('/deleteAdminById',{admin_id:row.admin_id},function(result){
+						$.post('/deleteByPrimaryKey',{memberId:row.memberId},function(result){
 							if (result>0){
 								$.messager.alert('删除结果','成功');
 								$('#dg').datagrid('reload');	 
