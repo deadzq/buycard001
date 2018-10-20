@@ -1,0 +1,389 @@
+Starting NewindexApplication on UnDead with PID 23768 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5521bd0a: startup date [Fri Oct 19 11:44:46 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1562 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5521bd0a: startup date [Fri Oct 19 11:44:46 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 3.468 seconds (JVM running for 6.745)
+A cookie header was received [1538380743] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Starting NewindexApplication on UnDead with PID 27036 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2ec61a: startup date [Fri Oct 19 16:15:20 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1722 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2ec61a: startup date [Fri Oct 19 16:15:20 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 4.34 seconds (JVM running for 10.322)
+A cookie header was received [1538380743; JSESSIONID=571329F653A2FAB398B006A90F1ABC3C] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Starting NewindexApplication on UnDead with PID 8352 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@700c5b75: startup date [Fri Oct 19 16:17:51 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1973 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@700c5b75: startup date [Fri Oct 19 16:17:51 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 4.027 seconds (JVM running for 5.339)
+A cookie header was received [1538380743; JSESSIONID=931F7BDEEA56FE9D6B11D97F5D8B1C58] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [360] milliseconds.
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Starting NewindexApplication on UnDead with PID 27172 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6831a581: startup date [Fri Oct 19 16:18:25 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1315 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6831a581: startup date [Fri Oct 19 16:18:25 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 2.654 seconds (JVM running for 3.877)
+A cookie header was received [1538380743; JSESSIONID=EA6D753B64E25DF769F608C3DD7BB693] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [178] milliseconds.
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Starting NewindexApplication on UnDead with PID 2164 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c65cfdf: startup date [Fri Oct 19 16:19:00 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2520 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c65cfdf: startup date [Fri Oct 19 16:19:00 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 4.96 seconds (JVM running for 6.63)
+A cookie header was received [1538380743; JSESSIONID=EF6E652DBC5292C0298656CD50C83835] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [165] milliseconds.
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Starting NewindexApplication on UnDead with PID 25040 (C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master\target\classes started by SeeClanUkyo in C:\Users\SeeClanUkyo\Desktop\ykmimiIndex-master)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f8cf985: startup date [Fri Oct 19 16:19:52 CST 2018]; root of context hierarchy
+Tomcat initialized with port(s): 80 (http)
+Initializing ProtocolHandler ["http-nio-80"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.32
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;F:\Oracle\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\kranalyzer;"F:\apache-tomcat-9.0.11\lib;F:\apache-tomcat-9.0.11\bin";F:\apache-maven-3.5.4\bin;F:\apache-maven-3.5.4\bin;F:\spring-2.0.1.RELEASE\bin;F:\commons-logging-1.2;F:\nodejs\;C:\Program Files (x86)\Calibre2\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\postgreSQL\pg10\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\mysql\mysql-5.7.21-winx64\bin;F:\SVNtool\bin;F:\spring-2.0.4.RELEASE\bin;F:\gradle-4.10.1\bin;F:\JDK9\JRE\bin;F:\JDK9\bin;F:\Git\cmd;F:\texlive\2018\bin\win32;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\SeeClanUkyo\AppData\Local\Programs\Python\Python36\;C:\Users\SeeClanUkyo\AppData\Local\Microsoft\WindowsApps;F:\Nmap;C:\Users\SeeClanUkyo\AppData\Roaming\npm;C:\Users\SeeClanUkyo\AppData\Local\GitHubDesktop\bin;F:\MiKTeX\miktex\bin\x64\;.]
+At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1459 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f8cf985: startup date [Fri Oct 19 16:19:52 CST 2018]; root of context hierarchy
+Mapped "{[/sendEmail]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.EmailController.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Mapped "{[/upload]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.FileUpController.queryFileData(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+Mapped "{[/updateSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.updateByPrimaryKeySelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberCardSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.selectMemberCardSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/cardList]}" onto public java.util.List<com.ykmimi.newindex.bean.MemberCard> com.ykmimi.newindex.controller.MemberCardController.showCardList(int)
+Mapped "{[/insertSelective]}" onto public java.lang.Integer com.ykmimi.newindex.controller.MemberCardController.insertSelective(com.ykmimi.newindex.bean.MemberCard)
+Mapped "{[/selectMemberSelective]}" onto public java.util.List<com.ykmimi.newindex.bean.Member> com.ykmimi.newindex.controller.MemberController.selectMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/insertOne]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ykmimi.newindex.controller.MemberController.insertMemberSelective(com.ykmimi.newindex.bean.Member)
+Mapped "{[/]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.index()
+Mapped "{[/test]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.test()
+Mapped "{[/union]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.union()
+Mapped "{[/single]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.single()
+Mapped "{[/about]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.about()
+Mapped "{[/contact]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.contact()
+Mapped "{[/login]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.login()
+Mapped "{[/admin]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.adminIndex()
+Mapped "{[/blogInfo]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.blogInfo()
+Mapped "{[/oldindex]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oldindex()
+Mapped "{[/tools]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.tools()
+Mapped "{[/js/index]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore()
+Mapped "{[/showCards]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.showCards()
+Mapped "{[/email]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.email()
+Mapped "{[/oracle/note1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.oracle()
+Mapped "{[/js/JSstore2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jsStore2()
+Mapped "{[/js/hurry2]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry2()
+Mapped "{[/ajax/ajax_0]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.ajax()
+Mapped "{[/js/hurry1]}" onto public java.lang.String com.ykmimi.newindex.controller.ShowController.jshurry1()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Adding welcome page template: index
+LiveReload server is running on port 35729
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-80"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 80 (http) with context path ''
+Started NewindexApplication in 2.811 seconds (JVM running for 3.677)
+A cookie header was received [1538380743; JSESSIONID=9E4E92BBFC5F00F33CBAEF1E75DE87E9] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s528ms771µs977ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h10m31s234ms81µs96ns).
