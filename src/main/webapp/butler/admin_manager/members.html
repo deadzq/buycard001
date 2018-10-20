@@ -74,72 +74,72 @@
 
 			<div class="fitem">
 				<label>会员性别:</label>
-				<input name="memberSexual" class="easyui-validatebox" required="false">
+				<input name="memberSexual" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员地址:</label>
-				<input name="memberAddr" class="easyui-validatebox" required="false">
+				<input name="memberAddr" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>登录账号:</label>
-				<input name="memberLoginname" class="easyui-validatebox" required="false">
+				<input name="memberLoginname" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>登录密码:</label>
-				<input name="memberPassword" class="easyui-validatebox" required="false">
+				<input name="memberPassword" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员类别:</label>
-				<input name="memberType" class="easyui-validatebox" required="false">
+				<input name="memberType" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员卡卡号:</label>
-				<input name="memberCardid" class="easyui-validatebox" required="false">
+				<input name="memberCardid" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员昵称:</label>
-				<input name="memberNickname" class="easyui-validatebox" required="false">
+				<input name="memberNickname" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员积分:</label>
-				<input name="memberPoints" class="easyui-validatebox" required="false">
+				<input name="memberPoints" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员收货地址:</label>
-				<input name="receiveAddrid" class="easyui-validatebox" required="false">
+				<input name="receiveAddrid" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>会员头像:</label>
-				<input name="memberPic" class="easyui-validatebox" required="false">
+				<input name="memberPic" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>用户注册时间:</label>
-				<input name="regDate" class="easyui-validatebox" required="false">
+				<input name="regDate" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>最近更新时间:</label>
-				<input name="updateDate" class="easyui-validatebox" required="false">
+				<input name="updateDate" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>登录系统时间:</label>
-				<input name="lastLogindate" class="easyui-validatebox" required="false">
+				<input name="lastLogindate" class="easyui-validatebox" >
 			</div>
 
 			<div class="fitem">
 				<label>退出系统时间:</label>
-				<input name="lastOutdate" class="easyui-validatebox" required="false">
+				<input name="lastOutdate" class="easyui-validatebox" >
 			</div>
 
 			<!--<div class="fitem">-->
@@ -165,7 +165,9 @@
 	    url:'/selectMemberSelective',
 	    toolbar:'#toolbar',
 		pagination:'true',
-		rownumbers:'true',
+        pageSize:5,
+        pageList:[5,10,15,20],
+        rownumbers:'true',
 		fitColumns:'true', 
 		singleSelect:'true',
 		queryParams:  form2Json('searchform'),
@@ -214,11 +216,11 @@
 		var url;
 		function newUser(){
 			//打开添加新闻 窗口
-			$('#dlg').dialog('open').dialog('setTitle','添加管理员');
+			$('#dlg').dialog('open').dialog('setTitle','添加会员');
 			//把form表单的内容给清空
 			$('#fm').form('clear');
 			//给url赋值
-			url = '/insertNewAdmin';
+			url = '/insertMemberSelective';
 		}
 		function editUser(){
 			//获得 选中的行 
