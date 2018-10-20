@@ -144,7 +144,7 @@
   </insert>
 
   <!--根据用户输入字段生成会员实体数据-->
-  <insert id="insertSelective" parameterType="Member">
+  <insert id="insertMemberSelective" parameterType="Member">
     insert into member
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="memberId != null and memberId !='' ">
