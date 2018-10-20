@@ -17,4 +17,7 @@ public interface MemberCardMapper {
 
     //动态升级会员卡数据
     Integer updateByPrimaryKeySelective(MemberCard memberCard);
+
+    //根据序列删除会员卡
+    Integer deleteByPrimaryKey(Long mcardId);
 }

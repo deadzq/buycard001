@@ -14,7 +14,7 @@ public interface MemberMapper {
     //插入会员
     int insert(Member member);
     //动态插入
-    int insertSelective(Member member);
+    int insertMemberSelective(Member member);
     //根据id返回会员信息
     Member selectByPrimaryKey(Long memberId);
     //动态查询会员实例
