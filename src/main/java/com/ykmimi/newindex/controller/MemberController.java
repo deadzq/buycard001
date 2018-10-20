@@ -1,5 +1,7 @@
 package com.ykmimi.newindex.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.ykmimi.newindex.bean.Member;
 import com.ykmimi.newindex.mapper.MemberMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,7 @@ public class MemberController {
     @RequestMapping("insertOne")
     public Map<String,Object> insertMemberSelective(Member member){
         Map<String,Object> map = new HashMap<String,Object>();
-        int insertCode =  memberMapper.insertSelective(member);
+        int insertCode =  memberMapper.insertMemberSelective(member);
         map.put("code",insertCode);
         if(insertCode>0){
             map.put("message","OK");
@@ -30,11 +32,31 @@ public class MemberController {
         return map;
     }
 
-//    动态获取会员数据
+
+    //动态获取会员数据并分页
     @RequestMapping("selectMemberSelective")
-    public List<Member> selectMemberSelective(Member member){
-        return memberMapper.selectMemberSelective(member);
+    public Map<String,Object> selectMemberSelective(Member member,Integer page,Integer rows){
+        Map<String,Object> map = new HashMap<String,Object>();
+        PageHelper.startPage(page,rows);
+        List list = memberMapper.selectMemberSelective(member);
+        PageInfo<Member> pageInfo = new PageInfo<Member>(list);
+
+        map.put("rows",pageInfo.getList());
+        map.put("total",pageInfo.getTotal());
+
+        return map;
     }
 
+    //动态插入用户数据
+    @RequestMapping("insertMemberSelective")
+    public Integer insertSelective(Member member){
+        return memberMapper.insertMemberSelective(member);
+    }
+
+    //根据ID删除用户
+    @RequestMapping("deleteByPrimaryKey")
+    public Integer deleteByPrimaryKey(Long memberId){
+        return memberMapper.deleteByPrimaryKey(memberId);
+    }
 
 }
