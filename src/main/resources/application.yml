@@ -7,6 +7,13 @@ spring:
       prefix: /butler/
       suffix: .jsp
 
+#分页插件设置
+pagehelper:
+ helperDialect: mysql
+ reasonable: true
+ supportMethodsArguments: true
+ params: count=countSql
+
 
 ##MySQL连接
 #spring:
