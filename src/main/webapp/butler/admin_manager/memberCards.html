@@ -87,15 +87,15 @@
 				<input name="mcardUsecount" class="easyui-validatebox" >
 			</div>
 
-			<div class="fitem">
-				<label>生成时间:</label>
-				<input name="regDate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>生成时间:</label>-->
+				<!--<input name="regDate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
-			<div class="fitem">
-				<label>注销时间:</label>
-				<input name="mcardCancelDate" class="easyui-validatebox" >
-			</div>
+			<!--<div class="fitem">-->
+				<!--<label>注销时间:</label>-->
+				<!--<input name="mcardCancelDate" class="easyui-validatebox" >-->
+			<!--</div>-->
 
 			<div class="fitem">
 				<label>会员卡图片路径:</label>
@@ -126,13 +126,15 @@
 	    url:'/selectMemberCardSelective',
 	    toolbar:'#toolbar',
 		pagination:'true',
+        pageSize:5,
+        pageList:[5,10,15,20],
 		rownumbers:'true',
 		fitColumns:'true', 
 		singleSelect:'true',
 		queryParams:  form2Json('searchform'),
 		 
 	    columns:[[
-			{field:'mcardId',title:'会员卡序列号', width:100},
+			{field:'mcardId',title:'会员卡序列号', hidden:true},
 			{field:'mcardNumber',title:'会员卡卡号',width:100},
 			{field:'mcardTypeid',title:'会员卡分类Id',width:100,
 				formatter:function(value,row,index){
@@ -151,7 +153,7 @@
 			{field:'mcardBalance',title:'会员卡余额',width:100},
 			{field:'mcardVd',title:'会员卡有效期',width:100},
 			{field:'mcardUsecount',title:'会员卡次数',width:100},
-			{field:'regDate',title:'生成时间',width:100},
+			{field:'regDate',title:'生成时间',width:150},
 			{field:'mcardCancelDate',title:'注销时间',width:100},
 			{field:'mcardPic',title:'会员卡图片路径',width:100}
 
@@ -226,7 +228,7 @@
 						/* $.post('url路径',数据,回调方法,格式);
 							row.xwsj 
 						 */
-						$.post('/deleteByPrimaryKey',{mcardId:row.mcardId},function(result){
+						$.post('/deleteByPK',{mcardId:row.mcardId},function(result){
 							if (result>0){
 								$.messager.alert('删除结果','成功');
 								$('#dg').datagrid('reload');	 
