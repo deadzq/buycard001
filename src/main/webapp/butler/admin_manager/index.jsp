@@ -46,7 +46,7 @@
                 <img src="img/9gj.png" height="60" style="margin-top:-10px;" />
             </div>
             <div style="color:#fff  ;font-size:3em; float:left;margin-left:30px;">
-                9#Butler后台管理系统 - 测试版 0.1.0 version
+                9#Butler后台管理系统 - 测试版 0.1.0001 version
             </div>
             <div style="float:right;height:70px; margin-right:50px;">
                 <span>您好，admin！</span>
@@ -100,6 +100,13 @@
         <div data-options="region:'center'" style="overflow:hidden">
             <div class="easyui-tabs" fit="true" id="container">
                 <div title="主页" style="padding:10px">
+                    <p>** 会员表字段优化 ,</p>
+                    <p>** 会员卡字段优化 ,</p>
+                    <p>** 会员卡分类表数据测试 ,</p>
+                    <p>** MemberCardMapper的insertSelective应该改为insertCardSelective ,</p>
+                    <p>** 会员与会员卡Mapper接口命名规范 ,</p>
+                    <p>** 多个数据元组选中删除 ,</p>
+                    <p>** excel格式导入数据 ,</p>
 
                     <!--<iframe src="/list.html" scrolling="no" frameborder="0" height="1000" width="1100" style="overflow:hidden; margin-bottom:10px;"></iframe>-->
                 </div>
