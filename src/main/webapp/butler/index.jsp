@@ -268,6 +268,17 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            // <div class="form-group">
+                                            // <div class="col-sm-10">
+                                            //     <div class="input-group margin-bottom-sm">
+                                            //         <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                                            //         <input class="form-control" type="text" placeholder="地址" id="1" name="memberAddr">
+                                            //     </div>
+                                            // </div>
+                                            // </div>
+
+
                                             <div class="form-group">
                                                 <div class="col-sm-10">
                                                     <div class="input-group margin-bottom-sm">
@@ -519,7 +530,6 @@
                                                 <input type="hidden" value="3" name="cardType"/>
                                             </div>
                                             <div class="form-group">
-
                                                 <div class="col-sm-10">
                                                     <div class="input-group margin-bottom-sm">
                                                         <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
